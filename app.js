@@ -20,6 +20,12 @@ app.get("/api/v1/users", (request, response) => {
     ]);
 });
 
+app.get("/api/v1/test", (request, response) => {
+    response.json({
+        test: "Test mi API"
+    })
+})
+
 
 
 module.exports = app;
